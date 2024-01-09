@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">StudentManagement</string>
+
+    <string-array name="hometowns">
+        <item>Hà Nội</item>
+        <item>Vĩnh Phúc</item>
+        <item>Nam Định</item>
+        <item>Hà Nam</item>
+        <item>Ninh Bình</item>
+        <item>Thái Bình</item>
+        <item>Hải Phòng</item>
+        <item>Quảng Ninh</item>
+        <item>Bắc </item>
+        <item>Hưng Yên</item>
+        <item>Hải Dương</item>
+    </string-array>
+</resources>

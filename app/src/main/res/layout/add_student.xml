@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="Thêm sinh viên"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/purple_200"
+                android:gravity="center"
+                android:text="Họ tên"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/student_name"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Trần Ngọc Bảo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/purple_200"
+                android:gravity="center"
+                android:text="MSSV"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/student_msssv"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="20215529" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/purple_200"
+                android:gravity="center"
+                android:text="Quê quán"
+                android:textSize="20sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/student_hometown"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:completionThreshold="3"
+                android:hint="Nam Định" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/teal_200"
+                android:gravity="center"
+                android:text="Ngày sinh"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <DatePicker
+            android:id="@+id/student_birthday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@color/teal_200" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/add_student"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Thêm sinh viên" />
+</LinearLayout>
